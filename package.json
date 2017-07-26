@@ -1,23 +1,30 @@
 {
-  "name": "yijia_ljt",
+  "name": "redux_practice",
   "version": "1.0.0",
-  "description": "",
+  "description": "react_redux 从零开始",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --colors --watch --compress --content-base ./dist  --port 1000 --host 0.0.0.0",
-    "build": "webpack --colors --display-error-details "
+    "start": "webpack-dev-server --hot --inline --progress --colors --watch --compress --content-base ./dist  --port 8089 --host 0.0.0.0",
+    "build": "webpack --colors --display-error-details  "
   },
   "repository": {
     "type": "git",
-    "url": "git+https://lijingting@github.com/lijingting/yijia_ljt.git"
+    "url": "git+https://github.com/fengzhike/redux_practice.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "redux",
+    "react-redux",
+    "webpack",
+    "less",
+    "immutable"
+  ],
+  "author": "fsk",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lijingting/yijia_ljt/issues"
+    "url": "https://github.com/fengzhike/redux_practice/issues"
   },
-  "homepage": "https://github.com/lijingting/yijia_ljt#readme",
+  "homepage": "https://github.com/fengzhike/redux_practice#readme",
   "dependencies": {
     "immutable": "^3.8.1",
     "moment": "^2.18.1",
@@ -39,11 +46,11 @@
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
     "less": "^2.7.2",
-    "less-loader": "^4.0.5",
+    "less-loader": "^4.0.4",
     "react-hot-loader": "^1.3.1",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^3.1.0",
-    "webpack-dev-server": "^2.5.1"
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
   }
 }

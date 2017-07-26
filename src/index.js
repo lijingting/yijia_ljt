@@ -1,22 +1,19 @@
 import React from 'react'
-import ReactDom from 'react-dom'
-import './style'
-class App extends React.Component{
-	componentDidMount(){
-	
-	}
-	handleClick(){
-		alert('hello word!')
-		
-	}
-	render(){
-		return (
-			<div onClick = {::this.handleClick}>Hello Word!</div>
-		)
-	}
-}
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import reducer from './reducers'
+import Additon from './containers/addition'
+import Subtraction from './containers/subtraction'
 
-ReactDom.render(
-	<App />,
+const store = createStore(reducer)
+window.store = store
+render(
+	<Provider store={store}>
+		<div>
+			<Additon />
+			<Subtraction />
+		</div>
+	</Provider>,
 	document.getElementById('app')
 )
